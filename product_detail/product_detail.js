@@ -92,6 +92,17 @@ angularJsEvent(){
                     $scope.hideFavoriteTable=true;
                 }
             }
+            $scope.senEmail=function(){
+                emailjs.send("service_ial1gm1","template_aua3mki",{
+                    from_name: "Fanstatic Yacht",
+                    to_name: $scope.myName,
+                    email_id: $scope.myMail,
+                    phone: $scope.myPhone,
+                    }).then(function(res){
+                        alert("success!"+res.status)
+                    });
+            }
+
         })
         $scope.downloadInfo=function(item){
             var jsObj = $scope.list[item-1];
