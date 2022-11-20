@@ -96,10 +96,10 @@ angularJsEvent(){
                 emailjs.send("service_ial1gm1","template_aua3mki",{
                     from_name: "Fanstatic Yacht",
                     to_name: $scope.myName,
-                    email_id: $scope.myMail,
+                    email_id: $scope.myEmail,
                     phone: $scope.myPhone,
                     }).then(function(res){
-                        alert("success!"+res.status)
+                        alert("Thank you !Information has been sent to your email!"+res.status)
                     });
             }
 

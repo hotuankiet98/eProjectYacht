@@ -615,3 +615,7 @@ img{
 .nav-item_favorite:hover .favorite-table-item {
     display: block;
 }
+.btn-reset:hover{
+    font-weight:500;
+    border:0.5px solid darkgrey;
+}
